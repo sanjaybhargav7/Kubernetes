@@ -1,0 +1,24 @@
+Firstly install minikube in your local machine
+The main purpose of installing minikube is to use Master Node and Worker nodes in same machine.
+minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.
+What you’ll need ::: 
+2 CPUs or more
+2GB of free memory
+20GB of free disk space
+Internet connection
+Container or virtual machine manager
+
+For installing in windows :: use the following command in command line to install MINIKUBE(K8s)  ::: winget install minikube 
+
+check in command prompt ;; From a terminal with administrator access (but not logged in as root), run: minikube start
+
+if minikube fails to start then check installing container or VM ,Mostly install docker ;;; docker --- VM + Container and easy to use in local machine 
+
+TO INSTALL DOCKER :: https://hub.docker.com/search?q=&type=edition&offering=community&sort=updated_at&order=desc
+
+after installing docker in local machine ,,,
+
+Start a cluster using the docker driver:::: minikube start --driver=docker
+
+To make docker the default driver: minikube config set driver docker
+
